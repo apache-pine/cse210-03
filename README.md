@@ -53,5 +53,5 @@ root                            (project root folder)
 - Brandon Smith - player
 - Garrett Cooper - director
 - Kylar Sorensen - director, README
-- McKay Thomas - terminal_service, **main **.py
+- McKay Thomas - terminal_service, `__main__.py`
 - Zak Sattler - secret_word
