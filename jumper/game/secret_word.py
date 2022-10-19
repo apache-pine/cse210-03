@@ -4,17 +4,17 @@ import random
 class Secret_word:
 
     def __init__(self):
-        self.words = ['Award', 'Skill', 'Build', 'Teach', 'Doubt', 'Joint', 'Write',
-                      'Phase', 'Front', 'Offer', 'Giant', 'Mouse', 'Scene', 'Night', 'Magic']
-        self.secret_word = random.choice(self.words)
+        self._words = ['Award', 'Skill', 'Build', 'Teach', 'Doubt', 'Joint', 'Write',
+                       'Phase', 'Front', 'Offer', 'Giant', 'Mouse', 'Scene', 'Night', 'Magic']
+        self._secret_word = random.choice(self._words)
 
-        self.secret_word = self.secret_word
+        self._secret_word = self._secret_word
 
     def select_word(self):
-        secret_word = self.secret_word
+        secret_word = self._secret_word
         return secret_word
 
     def compare_guess(self, letter):
-        if letter in self.secret_word:
+        if letter in self._secret_word:
             return True
         return False

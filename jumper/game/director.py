@@ -13,9 +13,8 @@ class Director:
 
         """Initializes the Director's variables."""
         self._keep_playing = Player.keep_playing
-        self.win = False
+        self._win = False
         pass
- 
 
     def start_game(self):
         """Starts the game by running the main game loop."""
@@ -25,7 +24,7 @@ class Director:
             self._do_updates()
 
         """Checks to see if the player won or lost."""
-        if self.win == False:
+        if self._win == False:
             print("Game over! You lost!")
         else:
             print("Game over! Congrats, You won!\n")
@@ -38,17 +37,20 @@ class Director:
         else:
             pass
         pass
-    
 
     def _get_inputs(self):
         """Calls the player objects method get_guess to get inputs."""
-        self._player.get_guess()
+        self._guess = self._player.get_guess()
         pass
-
 
     def _do_updates(self):
-        pass
+        self._word = self._secret_word._secret_word
 
+        if self._secret_word.compare_guess(self._guess):
+            pass
+        else:
+            self._terminal_service.parachute.pop(0)
 
     def _do_outputs(self):
-        pass
+        self._terminal_service.word_display()
+        self._terminal_service.display_parachute(self)
