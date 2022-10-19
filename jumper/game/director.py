@@ -40,12 +40,17 @@ class Director:
 
     def _get_inputs(self):
         """Calls the player objects method get_guess to get inputs."""
-        self._player.get_guess()
+        self._guess = self._player.get_guess()
         pass
 
     def _do_updates(self):
-        pass
+        self._word = self._secret_word._secret_word
+
+        if self._secret_word.compare_guess(self._guess):
+            pass
+        else:
+            self._terminal_service.parachute.pop(0)
 
     def _do_outputs(self):
-        self._terminal_service.display_word(self)
+        self._terminal_service.word_display()
         self._terminal_service.display_parachute(self)
