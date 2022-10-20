@@ -1,6 +1,6 @@
-from player import Player
-from secret_word import Secret_word
-from terminal_service import Terminal_service
+from game.player import Player
+from game.secret_word import Secret_word
+from game.terminal_service import Terminal_service
 
 
 class Director:
