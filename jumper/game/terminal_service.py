@@ -3,7 +3,7 @@ class Terminal_service:
     def __init__(self):
 
         self.parachute = ['  ___  ', ' /___\\ ', ' \\   / ', '  \\ /  ', '   0   ', '  /|\\  ', '  / \\  ', '', '^^^^^^^']
-        self.word = ''
+        self.word_display = ['_', '_', '_', '_', '_']
 
     def display_parachute(self):
         '''Create and print parachute as a list that can then be manipulated by the
@@ -14,8 +14,8 @@ class Terminal_service:
     def word_display(self):
         '''Print the inital word display with blank spaces to be used by the user
         for guessing.'''
-
-        return print('_ _ _ _ _')
+        for each in self.word_display:
+            print(each)
 
     def get_input(self, prompt):
         '''Gets the user input and directs the user with the given prompt'''
