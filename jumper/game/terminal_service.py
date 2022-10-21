@@ -3,23 +3,22 @@ class Terminal_service:
     def __init__(self):
 
         self.parachute = ['  ___  ', ' /___\\ ', ' \\   / ', '  \\ /  ', '   0   ', '  /|\\  ', '  / \\  ', '', '^^^^^^^']
-        self.word_display = ['_', '_', '_', '_', '_']
+        self.word_list = ['_', '_', '_', '_', '_']
 
     def display_parachute(self):
         '''Create and print parachute as a list that can then be manipulated by the
         directer class to remove the first 4 list items as the player guesses wrong.'''
-        word_as_string = ''
         for each in self.parachute:
-            word_as_string += each + ' '
-        
-        return print(word_as_string)
-            
+            print(each)
 
     def word_display(self):
         '''Print the inital word display with blank spaces to be used by the user
         for guessing.'''
-        for each in self.word_display:
-            print(each)
+        word_as_string = ''
+        for each in self.word_list:
+            word_as_string += each + ' '
+        
+        return print(word_as_string)
 
     def get_input(self, prompt):
         '''Gets the user input and directs the user with the given prompt'''
