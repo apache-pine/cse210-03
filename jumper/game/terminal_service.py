@@ -20,20 +20,6 @@ class Terminal_service:
 
         return print(word_as_string)
 
-    def get_input(self, prompt):
-        '''Gets the user input and directs the user with the given prompt'''
-        return input(prompt)
-
-    # def display_word(self, word):
-    #     '''Convert the word through an argument to be used in a list by the director class, as well as
-    #     the display word method. The word'''
-    #     self.word = word
-
-    #     for each in self.word:
-    #         self.word_letters.append(each)
-
-    #     return self.word_letters
-
     def display_guesses(self, letter_list):
         '''Print the necassary letter spaces and word. Accepts a list of
         letters as a parameter in order to print each new letter that is 
