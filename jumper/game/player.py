@@ -12,7 +12,7 @@ class Player:
     def get_guess(self):
         _valid = False
         while (_valid != True):
-            self._guess = input("Guess a letter [a-z]: ")
+            self._guess = input("Guess a letter [a-z]: ").lower()
 
             '''Validate user response'''
             if (len(self._guess) != 1):
