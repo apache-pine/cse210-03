@@ -12,7 +12,7 @@ class Director:
         self._terminal_service = Terminal_service()
 
         """Initializes the Director's variables."""
-        self._keep_playing = Player.keep_playing
+        self._keep_playing = self._player._keep_playing
         self._win = False
         pass
 
@@ -53,4 +53,4 @@ class Director:
 
     def _do_outputs(self):
         self._terminal_service.word_display()
-        self._terminal_service.display_parachute(self)
+        self._terminal_service.display_parachute()
