@@ -4,8 +4,8 @@ import random
 class Secret_word:
 
     def __init__(self):
-        self._words = ['Award', 'Skill', 'Build', 'Teach', 'Doubt', 'Joint', 'Write',
-                       'Phase', 'Front', 'Offer', 'Giant', 'Mouse', 'Scene', 'Night', 'Magic']
+        self._words = ['award', 'skill', 'build', 'teach', 'doubt', 'joint', 'write',
+                       'phase', 'front', 'offer', 'giant', 'mouse', 'scene', 'night', 'magic']
         self._secret_word = random.choice(self._words)
 
         self._secret_word = self._secret_word
