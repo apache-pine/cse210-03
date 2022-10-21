@@ -1,7 +1,7 @@
 class Terminal_service:
     '''Class that performs all of the services regarding the '''
-    def __init__(self):
 
+    def __init__(self):
         self.parachute = [' ', '  ___  ', ' /___\\ ', ' \\   / ', '  \\ /  ', '   0   ', '  /|\\  ', '  / \\  ', '', '^^^^^^^']
         self.word_list = ['_', '_', '_', '_', '_']
 
@@ -17,7 +17,7 @@ class Terminal_service:
         word_as_string = ''
         for each in self.word_list:
             word_as_string += each + ' '
-        
+
         return print(word_as_string)
 
     def get_input(self, prompt):
@@ -25,13 +25,13 @@ class Terminal_service:
         return input(prompt)
 
     # def display_word(self, word):
-    #     '''Convert the word through an argument to be used in a list by the director class, as well as 
+    #     '''Convert the word through an argument to be used in a list by the director class, as well as
     #     the display word method. The word'''
     #     self.word = word
 
     #     for each in self.word:
     #         self.word_letters.append(each)
-        
+
     #     return self.word_letters
 
     def display_guesses(self, letter_list):
@@ -41,5 +41,5 @@ class Terminal_service:
         word_guessed = ''
 
         for each in letter_list:
-            word_guessed += f'{each} '
+            word_guessed += f'{each}, '
         print(word_guessed)
