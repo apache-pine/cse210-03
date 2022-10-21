@@ -36,9 +36,10 @@ class Director:
             print("\nGame over! Congrats, You won!\n")
 
         """Asks user if they want to play again by calling the Player.play_again function."""
-        self._keep_playing == Player.play_again()
+        self._keep_playing = self._player.play_again()
 
         if self._keep_playing:
+            self.__init__()
             self.start_game()
         else:
             pass
