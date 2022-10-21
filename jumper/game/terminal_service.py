@@ -2,9 +2,7 @@ class Terminal_service:
     '''Class that performs all of the services regarding the '''
 
     def __init__(self):
-
-        self.parachute = [' ', '  ___  ', ' /___\\ ', ' \\   / ',
-                          '  \\ /  ', '   0   ', '  /|\\  ', '  / \\  ', '', '^^^^^^^']
+        self.parachute = [' ', '  ___  ', ' /___\\ ', ' \\   / ', '  \\ /  ', '   0   ', '  /|\\  ', '  / \\  ', '', '^^^^^^^']
         self.word_list = ['_', '_', '_', '_', '_']
 
     def display_parachute(self):
